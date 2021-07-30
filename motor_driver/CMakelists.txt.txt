@@ -1,0 +1,9 @@
+
+
+
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+add_executable(motor_driver_ROSwrapper src/motor_driver_ROSwrapper.cpp)
+target_link_libraries(motor_driver ${catkin_LIBRARIES})
